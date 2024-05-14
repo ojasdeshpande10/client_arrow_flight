@@ -144,7 +144,7 @@ def main():
         network_time += network_time_batch
         total_embedding_time += embedding_time
         total_tokenization_time += tokenization_time
-        if total_unique_groups > 100000:
+        if total_unique_groups > 10000:
             print("Total Unique groups for batch"+str(i)+":", total_unique_groups)
             print("Total Messages for batch"+str(i)+":", total_messages)
             break
